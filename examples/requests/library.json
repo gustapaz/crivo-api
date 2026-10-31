@@ -1,0 +1,32 @@
+{
+  "delimiter": ";",
+  "columns": [
+    {
+      "name": "code",
+      "type": "text",
+      "case": "upper",
+      "unique": true
+    },
+    {
+      "name": "title",
+      "type": "text"
+    },
+    {
+      "name": "year",
+      "type": "integer",
+      "min": 1450,
+      "max": 2030
+    },
+    {
+      "name": "category",
+      "type": "enum",
+      "case": "lower",
+      "values": [
+        "ficcao",
+        "tecnico",
+        "historia"
+      ]
+    }
+  ],
+  "csv": "code;title;year;category\nliv-01;Horizontes inventados;2022;FICCAO\nliv-02;Algoritmos de exemplo;2024;tecnico\nliv-03;Categoria incorreta;2020;outra"
+}

@@ -1,0 +1,32 @@
+{
+  "delimiter": ",",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "min": 1,
+      "unique": true
+    },
+    {
+      "name": "name",
+      "type": "text"
+    },
+    {
+      "name": "email",
+      "type": "email",
+      "case": "lower",
+      "unique": true
+    },
+    {
+      "name": "date",
+      "type": "date"
+    },
+    {
+      "name": "seats",
+      "type": "integer",
+      "min": 1,
+      "max": 5
+    }
+  ],
+  "csv": "id,name,email,date,seats\n1,  Ana Exemplo  ,ANA@example.test,2026-11-04,2\n2,Bruno Exemplo,bruno@example.test,2026-02-30,1\n1,Outro Exemplo,outro@example.test,2026-11-05,1\n3,Carla Exemplo,carla@example.test,2026-11-06,0\n4,=1+1,formula@example.test,2026-11-07,1\n5,\"Davi, Exemplo\",davi@example.test,2026-11-08,3"
+}
